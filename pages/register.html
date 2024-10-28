@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <script src="../scripts/registrationScript.js"></script>
+    <script src="../scripts/registrationScript.js" defer></script>
     <link rel="stylesheet" href="../styles/register.css">
 </head>
 <body>
     <form id="registrationForm">
         <label for="username">Username:</label>
         <input type="text" id="username">
-        <span id="usernameError" class="error"></span><br>
+        <span id="usernameError" class="error"></span>
+        <span id="usernameSuccess" class="success-icon" style="display:none;">✔️</span>
+        <span id="usernameFail" class="error-icon" style="display:none;">❌</span>
+        <br>
     
         <label for="email">Email:</label>
         <input type="email" id="email">
-        <span id="emailError" class="error"></span><br>
+        <span id="emailError" class="error"></span>
+        <span id="emailSuccess" class="success-icon" style="display:none;">✔️</span>
+        <span id="emailFail" class="error-icon" style="display:none;">❌</span>
+        <br>
     
         <label for="password">Password:</label>
         <input type="password" id="password">
-        <span id="passwordError" class="error"></span><br>
+        <span id="passwordError" class="error"></span>
+        <span id="passwordSuccess" class="success-icon" style="display:none;">✔️</span>
+        <span id="passwordFail" class="error-icon" style="display:none;">❌</span>
+        <br>
     
         <button type="submit">Submit</button>
     </form>
